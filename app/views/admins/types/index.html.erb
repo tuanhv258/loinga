@@ -1,0 +1,15 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Action</th>
+  </tr>
+  <% @types.each do |type| %>
+  <tr>
+    <td><%= type.name  %></td>
+    <td><<%= type.description  %></td>
+    <td><%= link_to "Delete", admins_type_path(type), method: :delete %><%= link_to "Update", edit_admins_type_path(type) %></td>
+ </tr>
+ <% end %>
+ <%= link_to "Create", new_admins_type_path %>
+</table>

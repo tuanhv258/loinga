@@ -1,0 +1,19 @@
+<div class="container-fluid jumbotron">
+  <table class="table table-striped">
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Delete</th>
+      <th>Update</th>
+    </tr>
+    <% @categories.each do |category| %>
+      <tr>
+        <td><%= category.name %></td>
+        <td><%= category.description %></td>
+        <td><%= link_to "Update", edit_admins_category_path(category), class: "btn btn-alert" %></td>
+        <td><%= link_to "Delete", admins_category_path(category), method: :delete, class: "btn btn-danger" %></td>
+      </tr>
+    <% end %>  
+  </table>
+  <%= link_to "Create", new_admins_category_path, class: "btn btn-success" %>
+</div>

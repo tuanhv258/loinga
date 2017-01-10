@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin site</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    "admin", media: "all" %>
+    <%= javascript_include_tag "admin" %>
+  </head>
+
+  <body cz-shortcut-listen="true">
+    <div class="row">
+      <%= render "admins/shared/admin_header" %>
+    </div>
+    <div class="row">
+      <%= yield %>
+    </div>
+    <footer><%= render "admins/shared/admin_footer"%></footer>
+  </body>
+</html>
