@@ -15,12 +15,9 @@
 									<div id="sportswear" class="panel-collapse collapse">
 										<div class="panel-body">
 											<ul>
-											<% binding.pry %>
-												<% category.types each do |type| %>
-													<li>
-														<%= link_to type.name, "#" %>
-													</li>
-												<% end %>
+											<% category.types.each do |type|%>
+												<li><%= type.name %></li>
+											<% end %>
 											</ul>
 										</div>
 									</div>
