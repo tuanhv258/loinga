@@ -1,0 +1,7 @@
+REPO_URL: "git@github.com:tuanhv258/loinga.git"
+
+HOST: "localhost:3000"
+
+DATABASE_HOSTNAME: "localhost"
+DATABASE_NAME: "loi_nga"
+DATABASE_USERNAME: "root"
