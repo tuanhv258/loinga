@@ -22,7 +22,6 @@ gem 'carrierwave'
 gem 'turbolinks'
 gem "font-awesome-rails"
 gem 'bootstrap-sass', '~> 3.3.6'
-gem 'pg', '~> 0.18.4'
 
 group :development, :test do
   gem 'byebug', platform: :mri
