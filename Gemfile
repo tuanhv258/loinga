@@ -22,7 +22,7 @@ gem 'carrierwave'
 gem 'turbolinks'
 gem "font-awesome-rails"
 gem 'bootstrap-sass', '~> 3.3.6'
-
+gem 'pg'
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'better_errors'
